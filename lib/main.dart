@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.green,
           child: Text('Click',
               style: TextStyle(
-                color: Colors.red,
+                color: Colors.black,
               )),
         ),
       ),
