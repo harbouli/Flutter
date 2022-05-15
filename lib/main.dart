@@ -20,8 +20,23 @@ class MyApp extends StatelessWidget {
           margin: const EdgeInsets.all(10.0),
           padding: const EdgeInsets.fromLTRB(10, 50, 50, 10),
           color: Colors.green[300],
-          child: const Text(
-            'Hello',
+          child: Row(
+            children: <Widget>[
+              const Text(
+                'Hello',
+              ),
+              ElevatedButton(
+                // style: ,
+                onPressed: (() => print('Hello')),
+                child: const Text('Click Me'),
+              ),
+              Container(
+                height: 200,
+                width: 100,
+                color: Colors.cyan,
+                child: const Text('Hello'),
+              )
+            ],
           ),
         ),
         floatingActionButton: const FloatingActionButton(
@@ -45,7 +60,7 @@ class MyApp extends StatelessWidget {
 // RaisedButton And RaisedButton.Icone
 // FlatButton and FlatButton.Icone === Rippel Button In Raect Native 
 // IconeButton 
-//
+//ElevatedButton
 
 
 
