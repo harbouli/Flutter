@@ -16,20 +16,12 @@ class MyApp extends StatelessWidget {
           ),
           centerTitle: true,
         ),
-        body: Center(
-          child: RaisedButton.icon(
-            color: Colors.green,
-            onPressed: () {
-              print('Send Mail');
-            },
-            icon: const Icon(
-              Icons.mail,
-              color: Colors.white,
-            ),
-            label: const Text(
-              'Mail Me',
-              // style:tColors.accents,
-            ),
+        body: Container(
+          margin: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.fromLTRB(10, 50, 50, 10),
+          color: Colors.green[300],
+          child: const Text(
+            'Hello',
           ),
         ),
         floatingActionButton: const FloatingActionButton(
@@ -44,11 +36,28 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// class NewW extends StatelessWidget {
-//   const NewW({Key? key}) : super(key: key);
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container();
-//   }
-// }
+
+
+
+
+// Buttons :
+// RaisedButton And RaisedButton.Icone
+// FlatButton and FlatButton.Icone === Rippel Button In Raect Native 
+// IconeButton 
+//
+
+
+
+
+// Padding : 
+// padding: const EdgeInsets.all
+// padding: const EdgeInsets.symmetric
+// padding: const EdgeInsets.fromLTRB(left, top, right, bottom)
+
+
+
+// Margin :
+// Margin: const EdgeInsets.all
+// Margin: const EdgeInsets.symmetric
+// Margin: const EdgeInsets.fromLTRB(left, top, right, bottom)
