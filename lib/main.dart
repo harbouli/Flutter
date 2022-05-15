@@ -17,25 +17,33 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
         body: Container(
-          margin: const EdgeInsets.all(10.0),
-          padding: const EdgeInsets.fromLTRB(10, 50, 50, 10),
           color: Colors.green[300],
           child: Row(
             children: <Widget>[
-              const Text(
-                'Hello',
+              Expanded(
+                flex: 2,
+                child: Container(
+                  padding: const EdgeInsets.all(30.0),
+                  color: Colors.pink[300],
+                  child: const Text('1'),
+                ),
               ),
-              ElevatedButton(
-                // style: ,
-                onPressed: (() => print('Hello')),
-                child: const Text('Click Me'),
+              Expanded(
+                flex: 3,
+                child: Container(
+                  padding: const EdgeInsets.all(30.0),
+                  color: Colors.amber,
+                  child: const Text('2'),
+                ),
               ),
-              Container(
-                height: 200,
-                width: 100,
-                color: Colors.cyan,
-                child: const Text('Hello'),
-              )
+              Expanded(
+                flex: 5,
+                child: Container(
+                  padding: const EdgeInsets.all(30.0),
+                  color: Colors.blue[700],
+                  child: const Text('3'),
+                ),
+              ),
             ],
           ),
         ),
@@ -76,3 +84,12 @@ class MyApp extends StatelessWidget {
 // Margin: const EdgeInsets.all
 // Margin: const EdgeInsets.symmetric
 // Margin: const EdgeInsets.fromLTRB(left, top, right, bottom)
+
+
+// MainAxis Alignment (Center, SpaceBetween ......)
+// CrossAxis Alignment (Center, Start, end....)
+// Axis Are Two MainAxis And crosAxis
+
+
+// Expanded Widgets:
+// 
