@@ -16,24 +16,39 @@ class MyApp extends StatelessWidget {
           ),
           centerTitle: true,
         ),
-        body: const Center(
-          child: Text(
-            'Mohamed',
-            style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.w600,
-                fontFamily: 'Euclid Circular B'),
+        body: Center(
+          child: RaisedButton.icon(
+            color: Colors.green,
+            onPressed: () {
+              print('Send Mail');
+            },
+            icon: const Icon(
+              Icons.mail,
+              color: Colors.white,
+            ),
+            label: const Text(
+              'Mail Me',
+              // style:tColors.accents,
+            ),
           ),
         ),
         floatingActionButton: const FloatingActionButton(
           onPressed: null,
           backgroundColor: Colors.green,
-          child: Text('Click',
-              style: TextStyle(
-                color: Colors.black,
-              )),
+          child: Icon(
+            Icons.ad_units,
+          ),
         ),
       ),
     );
   }
 }
+
+// class NewW extends StatelessWidget {
+//   const NewW({Key? key}) : super(key: key);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container();
+//   }
+// }
